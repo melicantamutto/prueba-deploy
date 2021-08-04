@@ -16,14 +16,14 @@ const publicKey = "32f15c68226028d29ba4973258668eb5";
 const privateKey = "1f3ed17bd9f71088f8286cefdf60a5d746d23499";
 const timestamp = Date.now();
 const hash = md5(timestamp + privateKey + publicKey);
-const urlBase = "http://gateway.marvel.com/";
+const urlBase = "//gateway.marvel.com/";
 const urlKeys = `?ts=${timestamp}&apikey=${publicKey}&hash=${hash}`;
 const urlCharacters = "/v1/public/characters";
 const urlComics = `/v1/public/comics`;
 const pathNonFoundNowanted =
-  "http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available";
+  "//i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available";
 const pathNonFoundWanted =
-  "http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available/portrait_uncanny";
+  "//i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available/portrait_uncanny";
 const limitPerPage = 20;
 let offset = 0;
 let selectedCards = "comics";
