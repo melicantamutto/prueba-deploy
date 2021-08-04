@@ -13,7 +13,7 @@ const getAll = (query) => document.querySelectorAll(query);
 //-------------------------------- BASE URL VARIABLES --------------------------------
 
 const publicKey = "1bd6b21648b80657c891a38bf36937fe";
-const privateKey = "83f70320d62fe850c251b0921f1b777e2c10f110";
+const privateKey = "1f3ed17bd9f71088f8286cefdf60a5d746d23499";
 const timestamp = Date.now();
 const hash = md5(timestamp + privateKey + publicKey);
 const urlBase = "http://gateway.marvel.com/";
